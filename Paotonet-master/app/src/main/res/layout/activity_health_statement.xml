@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    tools:context=".Activities.HealthStatement">
+
+    <TextView
+        android:id="@+id/headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="18dp"
+        android:gravity="left"
+        android:paddingHorizontal="15dp"
+        android:text="Health Declaration for date 10/01/21"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/declaration_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="#CCCCCC"
+        android:gravity="center_horizontal"
+        android:paddingStart="10dp"
+        android:paddingTop="7dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="7dp"
+        android:text="Harel Nizri,  Kindergarten Id: 12345678"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headline" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/listview_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/declaration_details">
+
+        <TextView
+            android:id="@+id/instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="3dp"
+            android:gravity="left"
+            android:paddingHorizontal="15dp"
+            android:text="I declare as follows:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/checkbox0_details"
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:background="#EEEEEE"
+            android:justificationMode="inter_word"
+            android:paddingStart="40dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/fever_check"
+            android:textSize="14sp"
+            android:typeface="serif" />
+
+        <CheckBox
+            android:id="@+id/checkbox0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="50dp"
+            android:background="?android:attr/listChoiceIndicatorMultiple"
+            android:button="@null"
+            android:scaleX="1.60"
+            android:scaleY="1.60" />
+
+        <TextView
+            android:id="@+id/checkbox1_details"
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="109dp"
+            android:background="#EEEEEE"
+            android:justificationMode="inter_word"
+            android:paddingStart="40dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/cough_check"
+            android:textSize="14sp"
+            android:typeface="serif" />
+
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="137dp"
+            android:background="?android:attr/listChoiceIndicatorMultiple"
+            android:button="@null"
+            android:scaleX="1.60"
+            android:scaleY="1.60"/>
+
+        <TextView
+            android:id="@+id/checkbox2_details"
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="216dp"
+            android:background="#EEEEEE"
+            android:justificationMode="inter_word"
+            android:paddingStart="40dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/taste_check"
+            android:textSize="14sp"
+            android:typeface="serif" />
+
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="222dp"
+            android:background="?android:attr/listChoiceIndicatorMultiple"
+            android:button="@null"
+            android:scaleX="1.60"
+            android:scaleY="1.60" />
+
+        <TextView
+            android:id="@+id/checkbox3_details"
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="275dp"
+            android:background="#EEEEEE"
+            android:justificationMode="inter_word"
+            android:paddingStart="40dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/contact_check"
+            android:textSize="14sp"
+            android:typeface="serif"/>
+
+        <CheckBox
+            android:id="@+id/checkbox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="289dp"
+            android:background="?android:attr/listChoiceIndicatorMultiple"
+            android:button="@null"
+            android:scaleX="1.60"
+            android:scaleY="1.60" />
+
+        <TextView
+            android:id="@+id/checkbox4_details"
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="350dp"
+            android:background="#EEEEEE"
+            android:justificationMode="inter_word"
+            android:paddingStart="40dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/isolation_check"
+            android:textSize="14sp"
+            android:typeface="serif" />
+
+        <CheckBox
+            android:id="@+id/checkbox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="365dp"
+            android:background="?android:attr/listChoiceIndicatorMultiple"
+            android:button="@null"
+            android:scaleX="1.60"
+            android:scaleY="1.60" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:background="#9C9C9C"
+        android:text="Confirm"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
